@@ -428,14 +428,14 @@ code link -->
                 with $\geq1$ calibrated camera (with known camera-to-robot
                 extrinsics) and robot proprioceptive states. For each
                 demonstration, we capture a trajectory of images $I_t^{(i)}$
-                from each available viewpoint. Using the robot’s end-effector
+                from each available viewpoint. Using the robot's end-effector
                 position and the calibrated extrinsics, we project the 3D
                 position of the end-effector into the 2D image plane, yielding
                 $k$ keypoints $s_t^{(i)} = \{(u_j^{(i)}, v_j^{(i)})\}_{j=1}^k$.
                 In practice, we take $k = 5$, giving us two points per finger on
                 the gripper, and one in the center. We choose this positioning
                 of points as it lends itself better to gripper positioning for
-                grasping actions. The gripper’s open/close state is represented
+                grasping actions. The gripper's open/close state is represented
                 as a binary grasp variable $g_t^{(i)} \in \{0, 1\}$.
               </p>
               <p>
@@ -1083,6 +1083,65 @@ code link -->
               <p class="has-text-centered" style="margin-top: 2px;">
                 DP: Cloth lifted too low, but right general direction.
               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Citation -->
+    <section class="section">
+      <div class="container is-max-desktop">
+        <!-- Centered section title -->
+        <div class="has-text-centered mb-5">
+          <h1 class="title is-2">Paper</h1>
+        </div>
+
+        <!-- Two-column layout: 1/3 paper, 2/3 info -->
+        <div class="columns is-vcentered is-variable is-6">
+          <!-- Left: Paper thumbnail (1/3 width) -->
+          <div class="column is-one-third has-text-centered">
+            <div
+              class="paper-thumbnail"
+              style="display: inline-block; width: 90%; max-width: 300px;"
+            >
+              <a href="https://arxiv.org/abs/2501.06994">
+                <img
+                  class="layered-paper-big"
+                  style="width: 100%; height: auto;"
+                  src="media/figures/paper.svg"
+                  alt="Paper thumbnail"
+                />
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Title, Authors, and BibTeX (2/3 width) -->
+          <div class="column is-two-thirds">
+            <div class="mb-3 has-text-centered">
+              <h3 class="title is-4 mb-2">
+                Motion Tracks: A Unified Representation for Human-Robot Transfer
+                in Few-Shot Imitation Learning
+              </h3>
+              <p class="is-size-6 mb-3">
+                Juntao Ren, Priya Sundaresan, Dorsa Sadigh, Sanjiban Choudhury,
+                Jeannette Bohg
+              </p>
+            </div>
+
+            <!-- BibTeX citation block -->
+            <div
+              class="citation-box"
+              style="text-align: left; padding: 1rem; border: 1px solid #ccc; border-radius: 6px; background: #f9f9f9;"
+            >
+              <pre><code>@misc{ren2025motion,
+      title     = {Motion Tracks: A Unified Representation for Human-Robot Transfer in Few-Shot Imitation Learning},
+      author    = {Juntao Ren and Priya Sundaresan and Dorsa Sadigh and Sanjiban Choudhury and Jeannette Bohg},
+      year      = {2025},
+      booktitle = {International Conference on Robotics and Automation}
+    }</code></pre>
             </div>
           </div>
         </div>
